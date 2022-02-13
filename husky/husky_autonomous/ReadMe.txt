@@ -16,8 +16,10 @@ Part 2 - Autonomous Navigation
 
 	In terminal,navigate to your catkin workspace,and run the following commands:
 	 - catkin_make   #the command should run successfully
-	 - roscore
+
+	In a different terminal:
 	 - roslaunch husky_gazebo husky_playpen.launch #If you have a different path for the package, change the path accordingly
+	In another terminal:
 	 - roslaunch husky_navigation move_base_mapless_demo.launch 
 	
 	To change the navigation goal, open the navigation_io.csv file and change the first 6 element in the second line, according to the collum names (xGoal,yGoal,zGoal,rollGoal,pitchGoal,yawGoal), elements are separated by commas ",".	
